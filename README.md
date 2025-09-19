@@ -18,6 +18,7 @@ curl -X POST http:// localhost:8000/api/fetch_req_diagramType -H "Content-Type: 
 -------this below just another way to run the test---------
 
 7.or copy paste below test code for testing in the localhost://8000/docs
+
 {
   "requirement": "Build a login flow for admin dashboard. The user enters credentials, submits them, the system verifies, and redirects to the dashboard upon success.",
   "diagram_type": "sequence"
