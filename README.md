@@ -10,6 +10,7 @@ To make sure you can run this in local server, you need to follow these steps:
   
   source venv/bin/activate  # or `venv\Scripts\activate` on Windows
 4.	Install FastAPI & Uvicorn
+
     pip install fastapi uvicorn
 
 5.uvicorn python_fastapi.fetch_req_diagramType:app --reload   // here need to be careful if your python folder is python_fastapi or python_fastAPI_fetch_clean and you can get fetch_req_diagramType function run 
