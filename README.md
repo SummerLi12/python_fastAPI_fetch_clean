@@ -15,8 +15,9 @@ To make sure you can run this in local server, you need to follow these steps:
 
 5.uvicorn python_fastapi.fetch_req_diagramType:app --reload   // here need to be careful if your python folder is python_fastapi or python_fastAPI_fetch_clean and you can get fetch_req_diagramType function run 
 
-6. type this in terminal fo testing
-curl -X POST http:// localhost:8000/api/fetch_req_diagramType -H "Content-Type: application/json" -d "{\"requirement\":\"Build a login flow for admin dashboard. The user enters credentials, submits them, the system verifies, and redirects to the dashboard upon success.\", \"diagram_type\":\"sequence\"}"
+6. type this in terminal fo testing //make sure you are in python_fastapi dir run this
+curl -X POST http://localhost:8000/api/fetch_req_diagramType -H "Content-Type: application/json" -d "{\"requirement\":\"Build a login flow for admin dashboard. The user enters credentials, submits them, the system verifies, and redirects to the dashboard upon success.\", \"diagram_type\":\"sequence\"}"
+
 
 -------this below just another way to run the test---------
 
