@@ -5,7 +5,9 @@ To make sure you can run this in local server, you need to follow these steps:
 2. in seperate terminal
 3. Set Up a Python Virtual Environment
   In your root project (outside of /src), run:
+ 
   python -m venv venv
+  
   source venv/bin/activate  # or `venv\Scripts\activate` on Windows
 4.	Install FastAPI & Uvicorn
     pip install fastapi uvicorn
