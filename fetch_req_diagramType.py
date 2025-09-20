@@ -54,7 +54,7 @@ def convertToJson(code: str) -> str:
     json_output = json.dumps({"mermaid_syntax": joined_mermaid}, separators=(',', ':'))
     return json_output
 
-@app.post("/diagram")
+@app.post("/api/fetch_req_diagramType")
 async def receive_diagram(input: DiagramRequest):
     
     # fetch req and diagram type for LLM use
@@ -94,3 +94,4 @@ async def receive_diagram(input: DiagramRequest):
 
     except Exception as e:
         print("Error:", str(e))
+
