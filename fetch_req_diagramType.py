@@ -8,7 +8,7 @@ import re
 app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Or ["http://localhost:3000"] for more security
+    allow_origins=["*"],  # will use this later ["https://www.atoms.tech/"] for more security
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -94,4 +94,5 @@ async def receive_diagram(input: DiagramRequest):
 
     except Exception as e:
         print("Error:", str(e))
+
 
